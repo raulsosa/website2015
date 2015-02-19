@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Personal Raul Sosa</title>
+	<meta charset="UTF-##"/>
+	<meta name="description" content="graphic web designer, dise&ntilde;ador grafico y programador web">
+	<meta name="keywords" content="Raul Sosa, Raul, Sosa, Graphic Design, Dise&ntilde;o grafico, usabilidad web, ui design, ux design, illustration, business cards, website design, dise&ntilde;o web">
+	<meta name="web_author" content="Raul Sosa Mariano">    
+	<meta name="author" content="Raul Sosa Mariano"> 
+	<style type="text/css">	</style>
+	<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:200' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		body{
+			margin: 0 auto;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+		h1,h2,h3,h4,h5,h6,q{
+			font-family: 'Play', sans-serif;
+			color: rgb(0,0,0);
+		}
+		a,p, ul, li, input, textarea, label{
+			font-family: 'Titillium Web', sans-serif;
+			color: rgb(0,0,0);
+		}
+		
+
+	</style>
+</head>
+<body>
+
+<!--NAVIGATION MENU-->
+	<header id="header_nav">
+		<nav>
+			<a href="#"> Home </a>
+			<a href="#"> Portfolio </a>
+			<a href="#"> Contratar! </a>
+		</nav>
+	</header>
+	<div id="clear"></div>
+	
+<!--END NAVIGATION MENU-->
+
+<div id="container">
+<!--PERSONAL INFORMATION / ABOUT ME -->
+	<header id="header_blurb">
+		<div id="blurb">
+			<h1 id="changeH1"></h1>
+
+			<h2> Soy Raul; Su Dise&ntilde;ador Grafico</h2>
+		<!--Start Slideshow -->
+			<p>Hello,<br/>
+
+			My Name is Raul Sosa. I am a graphic designer with a background in the fine arts. With years of experience on my hands I can do just about anything you throw at me. As it should, I have experience using the Adobe Creative Suit on both a Mac and Windows platform. My skills range from traditional paintings such as oils and acrylics to graphics and web design. I am knowledgable of HTML/CSS, PHP and 3D Studio Max. Starting in 2006, I have participated in various art expos and events throughout New Jersey which includes the Du'cret Art Show, the Brotherhood Sisterhood contests, Hudson Cradle Contest, The Yam contest and many more. You may be asking what makes me so special from the rest. Well, I have the ambition and drive to create design. I don't just design I live it. Art is my passion, my will and lifeline. But enough about that, what do you say to visiting some of my work? I invite you to take a look at my online portfolio at www.friedarts.com or behance.net/rsosa12. If you like what you see please leave a message, suggestions are always welcomed. Or perhaps you may prefer speaking in person? In that case you are always welcome to give me a call or e-mail. Please refer to my resume for more contact information.
+			<br/>
+			Thanks,<br/>
+			Raul Sosa</p>
+		</div>
+	</header>
+<!--END PERSONAL INFORMATION / ABOUT ME -->
+
+
+
+<!--START CONTACT FORM -->
+	<header id="header_contact">
+	<h2>&#191;Debes Contratarme?</h2>
+	<ul id="errors" class="">
+		<li id="info">There was a problem with your form submission:</li>
+	</ul>
+	<p id="success"> Thanks for your message! I will get back to you as soon as possible.</p>
+		<form method="post" action="#">
+			<label for="name">Name: <span class="required"><sup>+</sup></span></label>
+			<input type="text" id="name" name="name" value="" placeholder="joe schmo" required="required" autofocus="autofocus"/>
+			
+			<label for="email">Email: <span class="required"><sup>+</sup></span></label>
+			<input type="text" id="email" name="email" value="" placeholder="email@something.com" required="required" autofocus="autofocus">
+			
+			<label for="enquiry">Enquiry: </label>
+			<select>
+				<option value="general"> General </option>
+				<option value="job"> Job Opportunity </option>
+				<option value="freelance"> Freelance Opportunity </option>
+			</select>
+
+			<label for="message">Message: <span class="required"><sup>+</sup></span></label>
+			<textarea id="message" name="message" placeholder="Your message must be greater than 20 characters" required="required" data-minlength="20"></textarea>
+
+			<span id="loading"></span>
+			<input type="submit" value="Send" id="submit-button"/>
+		</form>
+	</header>
+<!--END CONTACT FORM -->
+</div>
+<!--END CONTAINER-->
+<!--FOOTER-->
+<div id="close">
+	<footer>
+		<p>&copy;Raul Sosa</p>
+	</footer>
+</div>
+<!--END FOOTER-->
+	<script src="JavaScript/greetings.js"></script>
+</body>
+</html>
