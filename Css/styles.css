@@ -187,19 +187,21 @@ img{
 .blurb_Main_header{
 	font-family: 'Leckerli One', cursive;
 	font-size: 175%;
-	color: #002f4b;/*turquoise like color*/	
-	position: absolute;
-	top: 70%;
-	left: 0%;
-	right: 5%;
-	bottom: 0;
+	color: #002f4b;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 }
 #blurb p{
 	color: rgb(0,0,0);
-	position: absolute;
-	top: 90%;
-	right: 0;
-	left: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	/* top, right, bottom, left - shorthand */
 }
 #blurb p:hover{
 	color: rgb(255,180,0);/*Golden Yellow Color*/
@@ -207,9 +209,8 @@ img{
 #blurb{
   width: 100%;
   height: 100vh;
-  background: url("https://s-media-cache-ak0.pinimg.com/originals/9c/15/de/9c15de3e583f843d515b41b9ee7ae1dd.jpg") top center no-repeat;
+  background: url("http://sourceenterprises.com/images/jlewis/grfcc.jpg") top center no-repeat;
   background-size: cover;
-  text-align: right;
 }
 #blurb:before {
     content: '';
