@@ -42,7 +42,9 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 			
 			title.onclick = function(){
 				alert("I shot the Sherrif!");
-				title.style.background = "green";			
+				title.style.background = "green";	
+				container.style.border = '1px solid green';
+
 			}
 		}
 
