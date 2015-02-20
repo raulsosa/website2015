@@ -271,6 +271,17 @@ img{
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
+.modalDialog::after{
+	background: url('../images/45degreee_fabric.png');
+	opacity: 0.8;
+	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: -1;   
+  	content: '';
+}
 .modalDialog:target{
 	opacity: 1;
 	pointer-events:auto;
