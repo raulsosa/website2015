@@ -46,7 +46,7 @@
 			</p>
 			<p>My Name is Raul Sosa. I am a graphic designer with a background in the fine arts. With years of experience on my hands I can do just about anything you throw at me. As it should, I have experience using the Adobe Creative Suit on both a Mac and Windows platform. </p>
 	</header>
-	
+
 	<header id="elephant">
 		<div id="portfolio">
 			<h1>Portafolio</h1>
@@ -97,20 +97,31 @@
 	<div id="openModal" class="modalDialog">
 		<div>
 			<a href="#close" title="close" class="close">X</a>
-			<h2>Contactar!</h2>
-			<form action="#"name="contactForm">
-				<label>Name:
-				<input type="text" name="nameField" placeholder="name"/>
-				</label>
-
-				<label>Email
-				<input type="email" name="emailField" placeholder="email@this.com"/>
-				</label>
-
-				<label>
-					<input type="submit" value="Send"/>
-				</label>
-			</form>
+			<h1>Let's Get in Touch!</h1>
+		<form>
+			<ul class="form-style-1">
+			    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+			    <li>
+			        <label>Email <span class="required">*</span></label>
+			        <input type="email" name="field3" class="field-long" />
+			    </li>
+			    <li>
+			        <label>Subject</label>
+			        <select name="field4" class="field-select">
+			        <option value="Advertise">Your Hired!</option>
+			        <option value="Partnership">Want to Work Together?</option>
+			        <option value="General Question">Let's just take it slow and chat for a bit.</option>
+			        </select>
+			    </li>
+			    <li>
+			        <label>Your Message <span class="required">*</span></label>
+			        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+			    </li>
+			    <li>
+			        <input type="submit" value="Submit" />
+			    </li>
+			</ul>
+		</form>
 		</div>
 	</div>
 
