@@ -29,18 +29,28 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 
 		document.getElementById('portfolio').appendChild(container);
 
+
+		title.style.visibility = "hidden";
+
 //SET EVENT LISTENER TO DIV IMAGES
-		document.getElementById(imgID).addEventListener('click',enlarge,true);
-		function doMove(){
-			container.style.border = "thin dotted red";
+		document.getElementById(imgID).addEventListener('mouseover',imgMouseOver,true);
+		document.getElementById(imgID).addEventListener('mouseout', imgMouseOut,true);
+//FUNCTION FOR EVENT LISTENER		
+		function imgMouseOver(){
 			title.style.color = '#fff';
+			title.style.visibility = "visible";
+			
+			title.onclick = function(){
+				alert("I shot the Sherrif!");
+				title.style.background = "green";			
+			}
 		}
-		//FUNCTION FOR EVENT LISTENER
-		function enlarge(){
-		//alert(imgID);
+
+		function imgMouseOut(){
+			title.style.visibility = 'hidden';
+		}
+
 		
-		setTimeout(doMove(), 4000);
-		}
 	}
 
 
