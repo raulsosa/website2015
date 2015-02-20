@@ -316,6 +316,5 @@ img{
 
 /* - - - - - - - -  MEDIA SCREEN SIZE - - - - - - - - - */
 @media screen and (max-width: 480px){
-div > .circle {
-	margin-bottom: 0px;
+
 }
