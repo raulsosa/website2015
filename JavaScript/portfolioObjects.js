@@ -42,8 +42,13 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 			
 			title.onclick = function(){
 				alert("I shot the Sherrif!");
-				title.style.background = "green";	
-				container.style.border = '1px solid green';
+				title.style.background = "rgba(0,0,0,0.8)";	
+				container.id = 'expandedImage';
+				title.innerHTML = "Click Me again!";
+
+				image.onclick = function(){
+					image.className = 'portfolioImages';
+				}
 			}
 		}
 

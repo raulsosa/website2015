@@ -156,6 +156,9 @@ img{
 	height: 250px;
 	width: 250px;
 }
+#expandedImage, #expandedImage img, #expandedImage p{
+	
+}
 .portfolio > p:hover{
 	color: #111;
 	background: rgba(220,66,37,0.8);
@@ -291,10 +294,10 @@ img{
 	position: relative;
 	margin: 10% auto;
 	padding: 10px 20px 10px 20px;
-	background: #fff; 
+	background: #fefefe; 
 	border-radius: 0px;
 	box-shadow: 0px 0px 15px #333;
-	/*background:  -moz-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
+	/*background:  -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0.1));
 	background:  -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
 	background:  -webkit-gradient(linear,top, rgba(255,255,255,1), rgba(200,200,200,1));
 	background:  -o-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
@@ -412,7 +415,6 @@ select{
 .form-style-1 .required{
     color:red;
 }
-</style>
 /* - - - - - - - -  MEDIA SCREEN SIZE - - - - - - - - - */
 @media screen and (max-width: 480px){
 
