@@ -41,9 +41,8 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 			title.style.visibility = "visible";
 			
 			title.onclick = function(){
-				alert("I shot the Sherrif!");
 				title.style.background = "rgba(0,0,0,0.8)";	
-				container.id = 'expandedImage';
+				title.className = 'expandedImage';
 				title.innerHTML = "Click Me again!";
 
 				image.onclick = function(){
