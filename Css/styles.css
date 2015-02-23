@@ -36,9 +36,6 @@ a,h1,h2,h3,h4,h5,h6,q{
 	letter-spacing: 0px;
 	line-height: 18px;
 }
-input[type='text'], input[type='email']{
-	color: rgb(0,150,0);
-}
 p, ul, li, input, textarea, label{
 	font-family: 'Titillium Web', sans-serif;
 	color: rgb(100,100,100);

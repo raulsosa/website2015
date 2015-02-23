@@ -44,10 +44,6 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 				title.style.background = "rgba(0,0,0,0.8)";	
 				title.className = 'expandedImage';
 				title.innerHTML = "Click Me again!";
-
-				image.onclick = function(){
-					image.className = 'portfolioImages';
-				}
 			}
 		}
 
@@ -61,10 +57,6 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 
 }
 
-
-function timeDiv(){
-	alert('Help');
-}
 
 var fruits = [];
 fruits.push('Help');
