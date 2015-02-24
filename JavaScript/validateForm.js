@@ -17,7 +17,7 @@
 	}
 
 }
-*/
+
 function validateForm(){
 	var firstName = document.forms[0]['field1'];
 	var lastName =	document.forms[0]['field2'];
@@ -32,4 +32,34 @@ function validateForm(){
 		document.forms[0]['field3'].focus();
 	}
 }	
-
+*/
+function validateForm(){
+	var firstName = document.contactForm.field1;
+	var lastName = document.contactForm.field2;
+	var email =	document.contactForm.field3;
+	var message = document.contactForm.field5;
+	if(firstName.value == ''){
+		alert('First Name Please...');
+		firstName.focus();
+		firstName.style.background = 'rgba(220,66,37,0.4)';
+		return false;
+	}if(lastName.value == ''){
+		alert('Last Name Please...');
+		lastName.focus();
+		lastName.style.background = 'rgba(220,66,37,0.4)';
+		return false;
+	}if(email.value == ''){
+		alert('Email Please...')
+		email.focus()
+		email.style.background = 'rgba(220,66,37,0.4)';
+		return false;
+	}if(message.value == ''){
+		alert('Please Say Something');
+		message.focus();
+		message.style.background = 'rgba(220,66,37,0.4)';
+		return false;
+	}else{
+		alert('Thanks ' + firstName.value + ' your good to go');
+		return true;
+	}
+}
