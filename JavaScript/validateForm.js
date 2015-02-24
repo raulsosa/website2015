@@ -1,38 +1,5 @@
 //Form Validations
-// CREATE FORM VALIDATION REVIEWS 
-/*function checkForm(){
-	var myForm = document.contactForm;
-	if(contactForm.field1.value == '' || contactForm.field2.value == '' || contactForm.field3.value == '' || contactForm.field5.value == ''){
-		alert('Please Complete all the form');
-
-		if(contactForm.field1.value == '' || contactForm.field2.value == ''){
-			contactForm.field1.style.background = 'rgba(220,66,37,0.4)';
-			contactForm.field2.style.background = 'rgba(220,66,37,0.4)';
-			contactForm.field1.focus();
-		}
-		
-	}
-	else{
-		contactForm.field3.focus();
-	}
-
-}
-
-function validateForm(){
-	var firstName = document.forms[0]['field1'];
-	var lastName =	document.forms[0]['field2'];
-	var fullName = firstName.value + lastName.value;
-	alert(fullName);
-
-	if(fullName === null || fullName === ''){
-		document.form[0]['field1'].style.background = 'rgba(220,66,37,0.4)'
-		alert('First Name must be Fillied out!');
-		return false;
-	}else{
-		document.forms[0]['field3'].focus();
-	}
-}	
-*/
+// CREATE FORM VALIDATION REVIEWS 	
 function validateForm(){
 	var firstName = document.contactForm.field1;
 	var lastName = document.contactForm.field2;
@@ -53,7 +20,15 @@ function validateForm(){
 		email.focus()
 		email.style.background = 'rgba(220,66,37,0.4)';
 		return false;
-	}if(message.value == ''){
+	}else{
+		//Check data format
+		var ret = validateEmail();
+		if(ret == false){
+			return false;
+		}
+	}
+
+	if(message.value == ''){
 		alert('Please Say Something');
 		message.focus();
 		message.style.background = 'rgba(220,66,37,0.4)';
@@ -62,4 +37,17 @@ function validateForm(){
 		alert('Thanks ' + firstName.value + ' your good to go');
 		return true;
 	}
+}
+
+function validateEmail(){
+	var emailID = document.contactForm.field3.value;
+	atpos = emailID.indexOf('@');
+	dotpos = emailID.lastIndexOf('.');
+	if(atpos < 1 || (dotpos - atpos < 2)){
+		alert('Seems like your email Id is off. Please try again');
+		document.contactForm.field3.focus();
+		document.contactForm.field3.style.background = 'rgba(220,66,37,0.4)';
+		return false;
+	}
+	return(true);
 }

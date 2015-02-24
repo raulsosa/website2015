@@ -364,6 +364,7 @@ select{
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
     outline: none;  
+    font: 13px 'Titillium Web', sans-serif;
 }
 .form-style-1 input[type=text]:focus, 
 .form-style-1 input[type=date]:focus,
