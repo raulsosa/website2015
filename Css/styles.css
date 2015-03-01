@@ -29,17 +29,26 @@ body{
 	height: 100%;
 	width: 100%;
 }
-a,h1,h2,h3,h4,h5,h6,q{
+h1,h2,h3,h4,h5,h6,q{
 	font-family: 'Leckerli One', cursive;
-	color: rgb(255,180,150);
-	text-shadow: 1px 1px 1px #dc4225;
-	letter-spacing: 0px;
-	line-height: 18px;
+	color: rgb(100,100,100);
+	letter-spacing: -1px;
+	margin: 23.75px 0;
+	/*line-height: 18px;*/
 }
+a{margin: 0; color: rgb(100,100,100);}
+/* MODULAR FONT SIZE ------------------------------
+5, 7, 9, 12, 16, 21, 28, 37, 50, 67, 83.*/
+h1 { font-size: 64px }
+h2 { font-size: 47.5px }
+h3 { font-size: 32px }
+h4 { font-size: 23.75px }
 p, ul, li, input, textarea, label{
 	font-family: 'Titillium Web', sans-serif;
 	color: rgb(100,100,100);
-	line-height: 18px;
+	line-height: 20px;
+	font-size: 16px;
+	margin: 23.75px 0;
 }
 header{
 	margin: 0;
@@ -56,43 +65,19 @@ header > div{
 	text-align: center;
 }
 
-div > h1{
+div > h2{
 	/* top, right, bottom, left - shorthand */
-	text-align: left;
-	padding:  3% 5% 2% 5%;
+	text-align: center;
+
+
 }
 div > p{
 	/* top, right, bottom, left - shorthand */
 	text-align: left;
-	padding: 1% 5% 2% 5%;/*// This causes problems when mobile fix later*/
+	/*padding: 1% 5% 2% 5%;// This causes problems when mobile fix later*/
 	width: 335px;
 	display: inline-block;
 	vertical-align: middle;
-}
-div > .circle{
-	position: relative;
-	display: table;
-	/*top:-50px; This does not remove extra space use neg margin top*/
-	/* top, right, bottom, left - shorthand */
-	margin: -50px auto -50px auto;
-	text-align: center;
-	width: 100px;
-    height: 100px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px; 
-    z-index: -999;
-    border: 3px solid #fff;
-    background-color: #ddd;
-    box-shadow: 0px 0px 5px #ccc;
-    padding: 0;
-    overflow: hidden;
-}
-div > .circle h1{
-	display: table-cell;
-	vertical-align: bottom;
-	padding-bottom: 14%;
-	text-align: center;
 }
 footer{
 	width: 100%;
@@ -112,7 +97,7 @@ footer p{
 	position: relative;
 }
 #elephant::after{
-	background: url('../images/swirl_pattern.png');
+	background: url('../Images/swirl_pattern.png');
 	opacity: 0.4;
 	top: 0;
   	left: 0;
@@ -166,13 +151,12 @@ img{
 }
 .pImg{
 	text-align: center;
-	border-right: 2px solid #eee;
 }
 #whoAmI_header{
 	position: relative;
 }
 #whoAmI_header::after{
-	background: url('../images/45degreee_fabric.png');
+	background: url('../Images/45degreee_fabric.png');
 	top: 0;
   	left: 0;
   	bottom: 0;
@@ -183,13 +167,12 @@ img{
 }
 .blurb_Main_header{
 	font-family: 'Leckerli One', cursive;
-	font-size: 175%;
-	color: #002f4b;
+	color: rgb(100,100,100);
 	position: relative;
 	text-align: center;
 	width: 100%;
-	padding-left: 0;
-	padding-right: 0;
+	padding:0;
+	margin: 0;
 }
 #blurb p{
 	color: rgb(0,0,0);
@@ -198,6 +181,7 @@ img{
 	width: 100%;
 	padding-left: 0;
 	padding-right: 0;
+	margin: 0;
 	/* top, right, bottom, left - shorthand */
 }
 #blurb p:hover{
@@ -300,6 +284,9 @@ img{
 	background:  -o-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
 	background:  linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
 	*/
+}
+.modalDialog p, .modalDialog h3{
+	margin: 0;
 }
 .modalDialog label, .modalDialog label input{
 	display: inline-block;
