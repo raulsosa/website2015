@@ -1,7 +1,7 @@
-<? xml version="1.0" encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <projects>
 	<project>
-		<image>image.jpg</image>
+		<images>/Images/20141209_160148.jpg</images>
 		<name>First Project</name>
 		<tools>Photoshop</tools>
 	</project>

@@ -28,3 +28,5 @@
 		</form>
 	</div>
 </div>
+
+<script type="text/javascript" src='Javascript/validateForm.js'></script>

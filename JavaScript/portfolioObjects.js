@@ -11,7 +11,7 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 		container.className = 'portfolio';
 
 		image = document.createElement('img');
-		image.setAttribute('src', 'images/'+imageSRC);
+		image.setAttribute('src', 'Images/'+imageSRC);
 		image.setAttribute('alt', imageSRC);
 		image.setAttribute('title', projName);
 		image.setAttribute('class', 'portfolioImages');
@@ -56,11 +56,6 @@ function projectImage(imgID,projName,toolsUsed,imageSRC){
 
 
 }
-
-
-var fruits = [];
-fruits.push('Help');
-console.log(fruits);
 
 var saraJones = new projectImage('saraJones', "Test Image", "Photoshop", '20141209_160148.jpg');
 saraJones.collectAll();

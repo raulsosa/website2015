@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<people>
+	<person>
+		<name>John Smith</name>
+		<birthdate>Aug. 10, 1950</birthdate>
+		<profession>Soldier</profession>
+	</person>
+
+	<person>
+		<name>Sara Sojos</name>
+		<birthdate>Mar. 25 1988</birthdate>
+		<profession>Interior Decorator</profession>
+	</person>
+
+	<person>
+		<name>Raul Sosa</name>
+		<birthdate>Aug. 13, 1991</birthdate>
+		<profession>Graphic Designer</profession>
+	</person>
+
+
+
+	<person>
+		<name>John Smith</name>
+		<birthdate>Aug. 10, 1950</birthdate>
+		<profession>Soldier</profession>
+	</person>
+
+	<person>
+		<name>Sara Sojos</name>
+		<birthdate>Mar. 25 1988</birthdate>
+		<profession>Interior Decorator</profession>
+	</person>
+
+	<person>
+		<name>Raul Sosa</name>
+		<birthdate>Aug. 13, 1991</birthdate>
+		<profession>Graphic Designer</profession>
+	</person>
+</people>
