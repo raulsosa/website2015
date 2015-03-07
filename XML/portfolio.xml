@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <projects>
-	<project>
-		<images>/Images/20141209_160148.jpg</images>
-		<name>First Project</name>
-		<tools>Photoshop</tools>
-	</project>
+	<file category='print'>
+		<name>First File</name>
+		<software>Photoshop</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Second File</name>
+		<software>Photoshop, Illustrator, Indesign, Web Design, UI-UX Design, Dreamweaver</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Third File</name>
+		<software>Photoshop, Web Design</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Fourth File</name>
+		<software>Photoshop</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>First File</name>
+		<software>Photoshop</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Second File</name>
+		<software>Photoshop, Illustrator, Indesign, Web Design, UI-UX Design, Dreamweaver</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Third File</name>
+		<software>Photoshop, Web Design</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
+
+	<file category='print'>
+		<name>Fourth File</name>
+		<software>Photoshop</software>
+		<image>Images/rain_magazine_friday-02.jpg</image>
+	</file>
 </projects>

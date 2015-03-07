@@ -1,4 +1,4 @@
-function projectImage(imgID,projName,toolsUsed,imageSRC){
+/*function projectImage(imgID,projName,toolsUsed,imageSRC){
 	this.imgID = imgID;
 	this.projName = projName;
 	this.toolsUsed = toolsUsed;
@@ -67,4 +67,6 @@ var james = new projectImage(2012, "Test 3", "Javascript, Jquery, Ajax, JSON, Ph
 james.collectAll();
 
 var elizabeth = new projectImage(2014, "Test Image", "Photoshop", '20141209_160148.jpg');
-elizabeth.collectAll();
+elizabeth.collectAll();*/
+
+

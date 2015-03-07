@@ -1,7 +1,7 @@
 <div id="openModal" class="modalDialog">
 	<div>
 		<a href="#close" title="close" class="close">X</a>
-		<h3>Let's Get in Touch!</h3>
+		<h2>Let's Get in Touch!</h2>
 		<form name="contactForm" onsubmit="return(validateForm())">
 			<ul class="form-style-1">
 			    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>

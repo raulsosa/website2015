@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Raul Sosa</title>
-	<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+	<link rel="shortcut icon" href="Images/favicon.png">
 	<meta charset="UTF-8"/>
 	<meta name="description" content="graphic web designer, dise&ntilde;ador grafico y programador web">
 	<meta name="keywords" content="Raul Sosa, Raul, Sosa, Graphic Design, Dise&ntilde;o grafico, usabilidad web, ui design, ux design, illustration, business cards, website design, dise&ntilde;o web">
@@ -22,6 +22,7 @@
 <?php require('pages/navigation.php'); ?>-->
 <?php require('pages/header.php'); ?>
 <?php require('pages/portfolio.php'); ?>
+<?php include('pages/resume.php'); ?>
 <?php require('pages/footer.php'); ?>
 <?php require('pages/contactForm.php');?>
 <!--

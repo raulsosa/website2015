@@ -30,7 +30,7 @@ body{
 	width: 100%;
 }
 h1,h2,h3,h4,h5,h6,q{
-	font-family: 'Leckerli One', cursive;
+	font-family: 'Titillium Web', sans-serif;
 	color: rgb(100,100,100);
 	letter-spacing: -1px;
 	margin: 23.75px 0;
@@ -39,17 +39,19 @@ h1,h2,h3,h4,h5,h6,q{
 a{margin: 0; color: rgb(100,100,100);}
 /* MODULAR FONT SIZE ------------------------------
 5, 7, 9, 12, 16, 21, 28, 37, 50, 67, 83.*/
-h1 { font-size: 64px }
-h2 { font-size: 47.5px }
-h3 { font-size: 32px }
-h4 { font-size: 23.75px }
+h1 { font-size: 64px; text-transform: uppercase;}
+h2 { font-size: 47.5px; text-transform: uppercase;}
+h3 { font-size: 32px; text-transform: uppercase;}
+h4 { font-size: 23.75px; text-transform: uppercase;}
+a{ font-family: 'Titillium Web', sans-serif; font-size: 18px;}
+q{display: block; text-align: center;}
 p, ul, li, input, textarea, label{
 	font-family: 'Titillium Web', sans-serif;
 	color: rgb(100,100,100);
 	line-height: 20px;
 	font-size: 16px;
 	margin: 23.75px 0;
-}
+}	
 header{
 	margin: 0;
 	padding: 0;
@@ -94,6 +96,89 @@ footer p{
 	padding-right: 5%; 
 }
 #elephant{
+	background-image: linear-gradient(to top,#eee,#fff);/*#dc4225*/
+}
+#elephant > h2{
+	padding-left: 1em;
+	color: salmon;
+}
+
+#elephant > ul {
+	display: inline-table;
+}
+#portList li > img{
+	width: 335px;
+}
+#portList > li{
+	display: inline-table;
+	opacity: 0.6;
+	padding: 1px;
+	transform:translateY(0);
+	-webkit-transform:translateY(0);
+	-moz-transform:translateY(0);
+	-o-transform:translateY(0);
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
+}
+#portList li:hover{
+	opacity: 1;
+	background: rgba(255, 249, 190, 1);
+	transform:translateY(-5%);
+	-webkit-transform:translateY(-5%);
+	-moz-transform:translateY(-5%);
+	-o-transform:translateY(-5%);
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
+}
+#portList li > p{
+	width: 300px;
+	height: 75px;
+	padding: 3px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#portList p{
+	color: black;
+}
+#elephant div > p{
+	display: table-footer-group;
+	
+}
+#portfolioButtons{
+  display: block;
+  border: none;
+  text-align: left;
+  margin-left: 3%;
+  padding: 0;
+}
+#portfolioButtons .portButton{
+	display: inline-block;
+	border:3px solid #eee;
+	color: #666;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -ms-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+}
+#portfolioButtons .portButton:hover{
+	border: 3px solid tomato;
+	color: tomato;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+/*#elephant{
 	position: relative;
 }
 #elephant::after{
@@ -120,37 +205,46 @@ footer p{
 }
 #portfolio .portfolio p{
 	padding: 0px;
-	display: table-cell;
-	vertical-align: middle;
+	display: table;
 	text-align: center;
 	width: 250px;
-	height: 250px;
-	margin: 0px;
-	position: relative;
+
+	border-top: 1px solid #ddd;
 }
 .portfolioImages{
 	padding: 0px;
 	background-size: cover;
-    display: table;
-    position: absolute;
-}
-img{
-	height: 250px;
+    display: inline-block;
+    height: 250px;
 	width: 250px;
+	
+}
+#portfolio > div{
+	opacity: 0.7;
+}
+#portfolio > div:hover{
+	opacity: 1;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
 }
 #expandedImage, #expandedImage img, #expandedImage p{
 	
 }
-.portfolio > p:hover{
+/*.portfolio > p:hover{
 	color: #111;
 	background: rgba(220,66,37,0.8);
 	transition: all 400ms ease-in-out;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	cursor: pointer;
-}
+}*/
 .pImg{
 	text-align: center;
+}
+#whoAmI_header h2{
+	font-family: 'Leckerli One', cursive;
+	text-transform: lowercase;
 }
 #whoAmI_header{
 	position: relative;
@@ -285,7 +379,7 @@ img{
 	background:  linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,1));
 	*/
 }
-.modalDialog p, .modalDialog h3{
+.modalDialog p, .modalDialog h2{
 	margin: 0;
 }
 .modalDialog label, .modalDialog label input{
@@ -392,6 +486,7 @@ select{
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
+    transition: all 400ms ease-in-out;
      -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
@@ -399,6 +494,74 @@ select{
 }
 .form-style-1 .required{
     color:red;
+}
+
+
+
+
+#resume{
+	
+}
+#resume > div{
+	text-align: left;
+}
+#resume div h2 {
+	color: darkblue;
+}
+#resume ul li{
+  display: inline-table;
+  margin: 3px;
+  height: 226px;
+  overflow: hidden;
+  width: 300px;
+  border: 1px solid #efefef;
+  background: rgba(253,253,250,0.5);
+  padding: 1em;
+  list-style: none;
+}
+#resume .companyName{
+	padding: 0;
+	margin: 0;
+	color: darkblue;
+}
+#resume .positionName{
+	padding: 0;
+	margin: 3px auto;
+	color: lightsalmon;
+}
+#resume .jobDescription{
+	padding: 0;
+	margin: 0;
+}
+#resume .locateJob{
+	padding: 0;
+	margin: 5px auto;
+}
+#resume #resumePdf{
+	text-align: right;
+	margin-right: 3%;
+}
+#resume .resumeButton{
+	display: inline-block;
+	text-align: right;
+	border:3px solid #eee;
+	color: #666;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -ms-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+}
+#resume .resumeButton:hover{
+	border: 3px solid darkblue;
+	color: darkblue;
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
 }
 /* - - - - - - - -  MEDIA SCREEN SIZE - - - - - - - - - */
 @media screen and (max-width: 480px){
