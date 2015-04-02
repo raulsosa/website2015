@@ -1,68 +1,27 @@
-<header id='resume'>
-<div>
-<h2>Resume</h2>
-<q>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.
-<br/> - Steve Jobs</q>
-<ul id="resumeList">
+<header id='resume' class="grid">
 
-</ul>
-<script>
-var resumeXhr = new XMLHttpRequest();
-resumeXhr.onload = function(){
-	function getNodeValue(obj, tag){
-			return obj.getElementsByTagName(tag)[0].firstChild.nodeValue;
-		}
-	if(xhr.status === 200){
+<div class="col-4-4">
+<div id="resume-half" class="col-1-2">
+	<h2>Resume</h2>
+	<blockquote><q>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</q>
+	<p> - Steve Jobs</p></blockquote>
 
-		var workListResponse = resumeXhr.responseXML;
-		var workHistory = workListResponse.getElementsByTagName('job');
-			for(var i=0; i < workHistory.length; i++){
-				var workContainer, company, position, description, newline;
-				workContainer = document.createElement('li');
-				workContainer.className = 'jobContainer';
-
-				company = document.createElement('h4');
-				company.className = 'companyName';
-				company.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'company')));
-				workContainer.appendChild(company);
-
-				position = document.createElement('p');
-				position.className = 'positionName';
-				position.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'position')));
-				workContainer.appendChild(position);
-
-				description = document.createElement('p');
-				description.className = 'jobDescription';
-				description.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'description')));
-				workContainer.appendChild(description);
-				/*company = document.createElement('p');
-				position = document.createElement('p');
-				newline = document.createElement('br');
-				description = document.createElement('p');
-
-				workContainer.appendChild(description);
-				workContainer.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'company')));
-				workContainer.appendChild(newline);
-				workContainer.insertBefore(position, newline, description);
-				workContainer.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'position')));
-				workContainer.appendChild(newline);
-				workContainer.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'description')));
-				workContainer.appendChild(company);*/
-
-				document.getElementById('resumeList').appendChild(workContainer); 
-
-
-			}
-	
-	}
-};
-resumeXhr.open('GET', 'XML/workHistory.xml', true);
-resumeXhr.send(null);
-
-</script>
-<div id="resumePdf">
+</div>
+<div id="resumePdf" class="col-1-4">
 	<a class="resumeButton" href='Documents/Raul_Sosa-CV.pdf' target="_blank" />Spanish CV</a>
-	<a class="resumeButton" href='Documents/Raul_Sosa-CV.pdf' target="_blank" />English CV</a>
 </div>
+
+<div id="resumePdf2" class="col-1-4">
+	<a class="resumeButton" href='Documents/cover-letter-resume-English2.pdf' target="_blank" />English CV</a>
 </div>
+
+
+</div>
+
+
+
+<div class="col-4-4">
+<ul id="resumeList"></ul>
+</div>
+
 </header>
