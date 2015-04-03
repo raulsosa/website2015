@@ -9,6 +9,7 @@
 	<meta name="web_author" content="Raul Sosa Mariano">    
 	<meta name="author" content="Raul Sosa Mariano"> 
 	<style type="text/css">	</style>
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:200' rel='stylesheet' type='text/css'/>
 	<!--<link rel="stylesheet" type="text/css" href="Css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="Css/gridstyles.css">

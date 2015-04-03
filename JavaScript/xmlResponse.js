@@ -20,15 +20,15 @@ xhr.onload = function(){
 				photo.appendChild(document.createTextNode(getNodeValue[i], 'image'));
 				container.appendChild(photo);
 
-				name = document.createElement('p');
-				software = document.createElement('br');
-				newline = document.createElement('br');
-				name.appendChild(document.createTextNode(getNodeValue(projectFiles[i], 'name')));
-				name.appendChild(newline);
-				name.insertBefore(software, newline);
-				name.appendChild(document.createTextNode(getNodeValue(projectFiles[i], 'software')));
-				name.appendChild(newline);
-				container.appendChild(name);
+				//name = document.createElement('p');
+				//software = document.createElement('br');
+				//newline = document.createElement('br');
+				//name.appendChild(document.createTextNode(getNodeValue(projectFiles[i], 'name')));
+				//name.appendChild(newline);
+				//name.insertBefore(newline);
+				//name.appendChild(document.createTextNode(getNodeValue(projectFiles[i], 'software')));
+				//name.appendChild(newline);
+				//container.appendChild(name);
 
 				document.getElementById('portList').appendChild(container); 
 

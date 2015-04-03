@@ -9,7 +9,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 }
-h1,h2,h3,h4,h5,h6,p,a,ul,li,q,blockquote,input,textarea,label{
+h1,h2,h3,h4,h5,h6,p,a,ul,li,q,blockquote,input,textarea,label, small{
 	font-family: 'Titillium Web', sans-serif !important;
 }
 h1{font-size: 2.323em; width: 335px; color: rgb(245,63,63);}
@@ -113,16 +113,24 @@ FIRST HEADER STYLING
 
 #header-right p{
 	margin: 0 auto;
+	font-size: 1.68em;
 }
-#header-right h2{
-	margin: 0 auto;
+#header-right .special-type{
+	color:rgb(245,63,63);
+}
+#header-right .special-header {
+	font-size: 2.479em;
+	margin: 15% auto 0% auto;
 }
 
 #whoAmI_header{
 	position: relative;
 }
 #whoAmI_header::after{
-	background: url('../Images/45degreee_fabric.png');
+	background: linear-gradient(to top,#eee,#fff);
+	background: -webkit-linear-gradient(top right,#eee,#fff);
+	background: -moz-linear-gradient(to top,#eee,#fff);
+	background: -o-linear-gradient(to top,#eee,#fff);
 	top: 0;
   	left: 0;
   	bottom: 0;
@@ -132,11 +140,11 @@ FIRST HEADER STYLING
   	content: '';
 }
 #whoAmI{
-	background-image:url('../Images/formal_suit.png');
-	background: #333;
+	background-image:url('http://www.teamworkstaffingnj.com/wp-content/uploads/2013/02/office3.jpg');
+	background: rgb(245,63,63);
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: contain;
+	background-size: cover;
 	height: 400px;
 }
 
@@ -150,7 +158,7 @@ PORTFOLIO SECTION
 }
 #portfolio h2{
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 }
 #portfolioButtons, #portfolioButtons2{
   display: block;
@@ -189,16 +197,38 @@ PORTFOLIO SECTION
 	padding: 1em;
 	display: inline-table;
 }
-.portfolio .portfolioImages{
+.portfolioImages{
 	width: 350px;
-	height: auto;
+	height: 350px;
 	margin: 0 auto;
 }
-
-
-
-
-
+.portfolioImages:hover{
+	animation: pulse 2s infinite linear alternate;
+	-webkit-animation: pulse 2s  infinite linear alternate;
+	-moz-animation: pulse 2s infinite linear alternate;
+	-o-animation: pulse 2s  infinite linear alternate;
+}
+.portfolio p{
+	border: 1px solid red;
+}
+@keyframes pulse{
+	 0% { transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+    50% {transform: translateY(-10px);  box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
+    100%  { transform:translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+}
+@-webkit-keyframes pulse{
+ 	0% {transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+    50% {transform: translateY(-10px);   box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
+    100%  { transform:translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+}
+@-moz-keyframes pulse{
+	from{-moz-transform:scale(1,1);}
+	to{-moz-transform:scale(1.01,1.01);}
+}
+@-o-keyframes pulse{
+	from{-o-transform:scale(1,1);}
+	to{-o-transform:scale(1.01,1.01);}
+}
 
 /*----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
@@ -246,7 +276,7 @@ RESUME BUTTONS  => ENGLISH PDF => SPANISH PDF
   padding: 0;
   margin: 0 auto;
 }
-#resumePdf .resumeButton, #resumePdf2 .resumeButton{
+#resumePdf .resumeButton{
 	display: inline-block;
 	border:1px solid #eee;
 	color: #666;
@@ -259,7 +289,7 @@ RESUME BUTTONS  => ENGLISH PDF => SPANISH PDF
     -ms-transition: all 800ms ease-in-out;
     -o-transition: all 800ms ease-in-out;
 }
-#resumePdf .resumeButton:hover, #resumePdf2 .resumeButton:hover{
+#resumePdf .resumeButton:hover{
 	border: 1px solid rgb(245,63,63);
 	color: rgb(245,63,63);
 	transition: all 400ms ease-in-out;
@@ -268,8 +298,72 @@ RESUME BUTTONS  => ENGLISH PDF => SPANISH PDF
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
 }
-
-
+.facebook{
+	display: inline-block;
+	border:1px solid #eee;
+	color: #666;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -ms-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+}
+.facebook:hover{
+	background: rgb(59,89,152);
+	color: rgb(255,255,255);
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+.linkedIn{
+	display: inline-block;
+	border:1px solid #eee;
+	color: #666;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -ms-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+}
+.linkedIn:hover{
+	background: rgb(0,119,181);
+	color: rgb(255,255,255);
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+.twitter{
+	display: inline-block;
+	border:1px solid #eee;
+	color: #666;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 800ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -ms-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+}
+.twitter:hover{
+	background: rgb(85,172,238);
+	color: rgb(255,255,255);
+	transition: all 400ms ease-in-out;
+	-webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
 /*----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 CONTACT FORM HEADER  => Google Maps
@@ -279,7 +373,10 @@ CONTACT FORM HEADER  => Google Maps
 	position: relative;
 }
 #contact-form-header:after{
-	background: rgb(34, 17, 51);
+	background: linear-gradient(to bottom,#eee,#fff);
+	background: -webkit-linear-gradient(bottom right,#eee,#fff);
+	background: -moz-linear-gradient(to bottom,#eee,#fff);
+	background: -o-linear-gradient(to bottom,#eee,#fff);
 	top: 0;
   	left: 0;
   	bottom: 0;
@@ -320,7 +417,7 @@ CONTACT FORM
     text-align: left;
     width: 350px;
     font: 13px 'Titillium Web', sans-serif;
-    color: rgb(255,255,255);
+    color: rgb(34, 17, 51);
 }
 .form-style-1 li {
     padding: 0;
@@ -369,8 +466,8 @@ select{
 .form-style-1 select:focus{
     -moz-box-shadow: 0 0 8px #88D5E9;
     -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
+    box-shadow: 0 0 8px rgb(245,63,63);
+    border: 1px solid rgb(245,63,63);
 }
 .form-style-1 .field-divided{
     width: 49%;
@@ -392,7 +489,7 @@ select{
     color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-    background: rgba(220,66,37,0.8);
+    background: rgb(245,63,63);
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;

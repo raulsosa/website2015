@@ -7,8 +7,11 @@
 	</div>
 
 	<div id="header-right" class="col-1-2">
-	<h2>Who Am I?</h2>
-		<p class="paragraph-size">My Name is Raul Sosa. I am a graphic designer with a background in the fine arts. With years of experience on my hands I can do just about anything you throw at me. As it should, I have experience using the Adobe Creative Suit on both a Mac and Windows platform. </p>
+	<h1 class="special-header"><em>Hello...</em></h1>
+		<p class="paragraph-size">
+		I'm <span class="special-type">Raul Sosa</span> and I'm a<br/>
+		<span class="special-type">Full-time | Freelance Designer</span>
+		</p>
 	</div>
 </div>
 </header>

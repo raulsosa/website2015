@@ -7,16 +7,18 @@
 </div>
 <div id="portfolioButtons" class="col-1-4">
 		<a class='portButton' href='https://www.behance.net/rsosa12'>Behance</a>
+		<a class='portButton' href='https://github.com/raulsosa'>GitHub</a>
 		
 </div>
-<div id="portfolioButtons2"class="col-1-4">
-	<a class='portButton' href='https://github.com/raulsosa'>GitHub</a>
-</div>
+<?php include('socialMedia.php');?>
 
 </div>
 
 <div id="portfolio-images" class="col-4-4">	
-	<ul id='portList'></ul>
+	<ul id='portList'>
+
+
+	</ul>
 </div>
 </header>
 

@@ -9,11 +9,10 @@
 </div>
 <div id="resumePdf" class="col-1-4">
 	<a class="resumeButton" href='Documents/Raul_Sosa-CV.pdf' target="_blank" />Spanish CV</a>
-</div>
-
-<div id="resumePdf2" class="col-1-4">
 	<a class="resumeButton" href='Documents/cover-letter-resume-English2.pdf' target="_blank" />English CV</a>
 </div>
+
+<?php include('socialMedia.php');?>
 
 
 </div>
