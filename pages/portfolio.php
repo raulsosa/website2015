@@ -6,9 +6,9 @@
 	-->
 </div>
 <div id="portfolioButtons" class="col-1-4">
-		<a class='portButton' href='https://www.behance.net/rsosa12'>Behance</a>
-		<a class='portButton' href='https://github.com/raulsosa'>GitHub</a>
-		
+	<!--	<a class='portButton' href='https://www.behance.net/rsosa12'>Behance</a>
+		<a class='portButton' href='https://github.com/raulsosa'>GitHub</a>-->
+	<p>Welcome to my site. Take a look around explore some of my work on the web to your right and have a good time. If you like what you see than please leave a message.</p>
 </div>
 <?php include('socialMedia.php');?>
 

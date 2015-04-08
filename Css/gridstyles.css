@@ -79,20 +79,6 @@ GRID LAYOUT - Modular scale
 	display: table;
 	clear:both;
 }
-/*.col-2-3{
-	width: 66.66%;
-}
-.col-1-3{
-	width: 33.33%;
-}
-.col-3-4{
-	width: 77.66%;
-}
-.col-1-8{
-	width: 22.34%;
-}
-*/
-
 .col-1-4{
 	width: 25%;
 }
@@ -140,8 +126,7 @@ FIRST HEADER STYLING
   	content: '';
 }
 #whoAmI{
-	background-image:url('http://www.teamworkstaffingnj.com/wp-content/uploads/2013/02/office3.jpg');
-	background: rgb(245,63,63);
+	background-image:url('../Images/picture of me-small.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -198,8 +183,8 @@ PORTFOLIO SECTION
 	display: inline-table;
 }
 .portfolioImages{
-	width: 350px;
-	height: 350px;
+	width: 250px;
+	height: 250px;
 	margin: 0 auto;
 }
 .portfolioImages:hover{
@@ -298,72 +283,64 @@ RESUME BUTTONS  => ENGLISH PDF => SPANISH PDF
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
 }
-.facebook{
-	display: inline-block;
-	border:1px solid #eee;
-	color: #666;
-	margin-top: 1em;
-	padding: 0.5em 1em;
+
+/*----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+SVG SPECIFIC BUTTONS 
+-----------------------------------------------------------------------------
+----------------------------------------------------------------------------*/
+div#social-buttons.col-1-4 {
+	text-align: right;
+}
+.facebook, .linkedIn, .twitter, .behance, .mail, .github{
 	text-decoration: none;
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-    -moz-transition: all 800ms ease-in-out;
-    -ms-transition: all 800ms ease-in-out;
-    -o-transition: all 800ms ease-in-out;
 }
-.facebook:hover{
-	background: rgb(59,89,152);
-	color: rgb(255,255,255);
-	transition: all 400ms ease-in-out;
-	-webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
+svg{
+	margin: 1em 0.2em;
+	width: 24px;
+	height: 24px;
+	text-align: right;
 }
-.linkedIn{
-	display: inline-block;
-	border:1px solid #eee;
-	color: #666;
-	margin-top: 1em;
-	padding: 0.5em 1em;
+svg rect, .rect{
+	fill:rgb(0,0,0);
+	width:24px;
+	height: 24px;
+}
+svg rect:hover, svg.rect:hover{
+	fill:rgb(245,63,63);
+}
+svg polygon, svg.mail-poly, svg path.mail-poly{
+	fill:rgb(255,255,255);
+}
+.svg-facebook{
+	margin:0;
+	padding: 0;
 	text-decoration: none;
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-    -moz-transition: all 800ms ease-in-out;
-    -ms-transition: all 800ms ease-in-out;
-    -o-transition: all 800ms ease-in-out;
-}
-.linkedIn:hover{
-	background: rgb(0,119,181);
-	color: rgb(255,255,255);
-	transition: all 400ms ease-in-out;
-	-webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
-}
-.twitter{
 	display: inline-block;
-	border:1px solid #eee;
-	color: #666;
-	margin-top: 1em;
-	padding: 0.5em 1em;
+	fill: rgb(59,89,152);
+}
+.svg-facebook:hover{
+	fill: rgb(245,63,63);
+}
+.svg-linkedIn{
 	text-decoration: none;
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-    -moz-transition: all 800ms ease-in-out;
-    -ms-transition: all 800ms ease-in-out;
-    -o-transition: all 800ms ease-in-out;
+	display: inline-block;
+	fill: rgb(0,119,181);
 }
-.twitter:hover{
-	background: rgb(85,172,238);
-	color: rgb(255,255,255);
-	transition: all 400ms ease-in-out;
-	-webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
+.svg-linkedIn:hover{
+	fill: rgb(245,63,63);
 }
+.svg-twitter{
+	text-decoration: none;
+	display: inline-block;
+	fill: rgb(85,172,238);
+}
+.svg-twitter:hover{
+	text-decoration: none;
+	display: inline-block;
+	fill: rgb(245,63,63);
+}
+
 /*----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 CONTACT FORM HEADER  => Google Maps
@@ -523,5 +500,73 @@ footer p{
 	color: #eee;
 	margin: 0 auto;
 	padding: 2.323em;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+MOBILE RESPONSE
+-----------------------------------------------------------------------------
+----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px){
+
+*, *:before, *:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} 
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+[class*='col-']{
+	float: left;
+
+}
+[class*='col-']{
+	padding-right: 20px;
+}
+[class*='col-']:last-of-type{
+	padding-right: 0;
+}
+.grid{
+	margin: 0 auto;
+}
+.grid:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+.col-1-4{
+	width: 50%;
+}
+.col-1-2{
+	width: 100%;
+}
+.col-1-3{
+	width: 100%;
+}
+.col-4-4{
+	width: 100%;
+}
+
+
+
+
+/*----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+END MOBILE RESPONSE
+-----------------------------------------------------------------------------
+----------------------------------------------------------------------------*/
 }
 

@@ -4,48 +4,31 @@
 	<file category='print'>
 		<name>First File</name>
 		<software>Photoshop</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
+		<image>Images/45degreee_fabric.png</image>
 	</file>
 
 	<file category='print'>
 		<name>Second File</name>
 		<software>Photoshop, Illustrator, Indesign, Web Design, UI-UX Design, Dreamweaver</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
+		<image>Images/45degreee_fabric.png</image>
 	</file>
 
 	<file category='print'>
 		<name>Third File</name>
 		<software>Photoshop, Web Design</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
+		<image>Images/45degreee_fabric.png</image>
 	</file>
 
 	<file category='print'>
 		<name>Fourth File</name>
 		<software>Photoshop</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
+		<image>Images/45degreee_fabric.png</image>
 	</file>
 
 	<file category='print'>
 		<name>First File</name>
 		<software>Photoshop</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
+		<image>Images/45degreee_fabric.png</image>
 	</file>
 
-	<file category='print'>
-		<name>Second File</name>
-		<software>Photoshop, Illustrator, Indesign, Web Design, UI-UX Design, Dreamweaver</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
-	</file>
-
-	<file category='print'>
-		<name>Third File</name>
-		<software>Photoshop, Web Design</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
-	</file>
-
-	<file category='print'>
-		<name>Fourth File</name>
-		<software>Photoshop</software>
-		<image>Images/rain_magazine_friday-02.jpg</image>
-	</file>
 </projects>
