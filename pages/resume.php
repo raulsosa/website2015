@@ -9,7 +9,7 @@
 </div>
 <div id="resumePdf" class="col-1-4">
 	<a class="resumeButton" href='Documents/Raul_Sosa-CV.pdf' target="_blank"><img src="pages/svg/pdf.svg" alt="pdf-label"/> Spanish CV</a>
-	<a class="resumeButton" href='Documents/cover-letter-resume-English2.pdf' target="_blank"><img src="pages/svg/pdf.svg" alt="pdf-label"/> English CV</a>
+	<a class="resumeButton" href='Documents/Raul_Sosa-CV_English.pdf' target="_blank"><img src="pages/svg/pdf.svg" alt="pdf-label"/> English CV</a>
 </div>
 
 <?php include('socialMedia.php');?>

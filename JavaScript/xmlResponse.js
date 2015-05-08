@@ -52,24 +52,28 @@ resumeXhr.onload = function(){
 		var workListResponse = resumeXhr.responseXML;
 		var workHistory = workListResponse.getElementsByTagName('job');
 			for(var i=0; i < workHistory.length; i++){
-				var workContainer, company, position, description, newline;
+				var workContainer, listContainer, company, position, description, newline;
 				workContainer = document.createElement('li');
 				workContainer.className = 'jobContainer';
+
+				listContainer=document.createElement('div');
+				listContainer.className= "listContainer";
+				workContainer.appendChild(listContainer);
 
 				company = document.createElement('p');
 				company.className = 'companyName';
 				company.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'company')));
-				workContainer.appendChild(company);
+				listContainer.appendChild(company);
 
 				position = document.createElement('p');
 				position.className = 'positionName';
 				position.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'position')));
-				workContainer.appendChild(position);
+				listContainer.appendChild(position);
 
 				description = document.createElement('p');
 				description.className = 'jobDescription';
 				description.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'description')));
-				workContainer.appendChild(description);
+				listContainer.appendChild(description);
 
 				document.getElementById('resumeList').appendChild(workContainer); 
 
@@ -82,5 +86,4 @@ resumeXhr.send(null);
 
 }
 
-portfolioXML();
 resumeXML();
