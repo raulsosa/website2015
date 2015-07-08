@@ -83,9 +83,11 @@ echo "</div></div>";
 <script>
 
 var mn = $(".main-nav");
+var win = $(window);
+var winH = win.height();
 
 $(window).scroll(function(){
-	if($(this).scrollTop() > 400){
+	if($(this).scrollTop() > winH){
 		mn.addClass("main-nav-scrolled");
 	}
 	else{

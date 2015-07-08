@@ -1,5 +1,4 @@
-<header id="contact-form-header">
-<div class="grid">
+<header id="contact-form-header" class="grid">
 <div id="contain-form" class="col-1-2">
 	<h2>Contact Information</h2>
 
@@ -107,6 +106,5 @@ if(isset($_POST["submitted"])){
 </div>
 <!-- CREATE THE GOOGLE MAP API -->
 <div id="map-canvas" class="col-1-2"></div>
-</div>
 </header>
 <script type="text/javascript" src='JavaScript/validateForm.js'></script>

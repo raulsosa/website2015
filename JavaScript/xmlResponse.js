@@ -52,7 +52,7 @@ resumeXhr.onload = function(){
 		var workListResponse = resumeXhr.responseXML;
 		var workHistory = workListResponse.getElementsByTagName('job');
 			for(var i=0; i < workHistory.length; i++){
-				var workContainer, listContainer, company, position, description, newline;
+				var workContainer, listContainer, company, position, description, newline, pdfLink;
 				workContainer = document.createElement('li');
 				workContainer.className = 'jobContainer';
 
@@ -75,9 +75,16 @@ resumeXhr.onload = function(){
 				description.appendChild(document.createTextNode(getNodeValue(workHistory[i], 'description')));
 				listContainer.appendChild(description);
 
+				pdfLink = document.createElement('a');
+				pdfLink.className = 'resumeButton';
+				pdfLink.href = 'Documents/Raul_Sosa-CV_English.pdf';
+				pdfLink.appendChild(document.createTextNode("view resume") );
+				listContainer.appendChild(pdfLink);
+
 				document.getElementById('resumeList').appendChild(workContainer); 
 
 			}
+
 	
 	}
 }

@@ -20,8 +20,7 @@
 
 <header id="portfolio-header" class="grid">
 <div class="col-4-4">
-	<h2 class="col-1-3 portfolio-intro">Portafolio</h2>
-	<?php include('socialMedia.php');?>
+	<h2 class="portfolio-intro">Portafolio</h2>
 </div>
 <div id="portfolio" class="col-4-4 portfolio-area clearfix">      
     <script id="portfolio-template" type="text/x-handlebars-template">
@@ -41,8 +40,8 @@
         {{/if}}
         {{/if}}
     </figure>
-    <p class="portfolio-title">{{this.name}}</p>
     <div class="portfolio-fields">
+    <p class="portfolio-title">{{this.name}}</p>
     <ul class="field-list">
         {{#each this.fields}}
      <li class="field-item">{{this}}</li>
